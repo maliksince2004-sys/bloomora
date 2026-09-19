@@ -13,7 +13,9 @@
 </head>
 
 <body>
-    <div class="page-transition-overlay" aria-hidden="true"></div>
+    <div class="page-transition-overlay" aria-hidden="true">
+        <canvas id="flowerTornadoCanvas"></canvas>
+    </div>
     <div class="petal-container" aria-hidden="true">
         <div class="petal"></div>
         <div class="petal"></div>
@@ -157,11 +159,12 @@
                 <h3>Contact Us</h3>
                 <p>Tell us your needs and we will create the perfect floral arrangement for you.</p>
                 <ul>
-                    <li>📞 0789846041</li>
+                    <li>📞 +94 764796117</li>
                     <li>📍 Colombo, Sri Lanka</li>
-                    <li>✉️ maliknihara@gmail.com</li>
+                    <li><a href="mailto:bloomoratransport@gmail.com">✉️ bloomoratransport@gmail.com</a></li>
                 </ul>
-                <a href="mailto:maliknihara@gmail.com" class="btn btn-primary">Email Us</a>
+                <a href="https://wa.me/94764796117" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-primary">Contact Us</a>
             </div>
         </section>
     </main>
@@ -185,29 +188,38 @@
                 </div>
                 <div class="footer-col">
                     <h4>Contact</h4>
-                    <p>📞 0789846041</p>
-                    <p>✉️ maliknihara@gmail.com</p>
+                    <p><a href="https://wa.me/94764796117" target="_blank" rel="noopener noreferrer">📞 +94764796117</a>
+                    </p>
+                    <p><a href="mailto:bloomoratransport@gmail.com">✉️ bloomoratransport@gmail.com</a></p>
                     <p>📍 Colombo, Sri Lanka</p>
                 </div>
                 <div class="footer-col">
                     <h4>Follow Us</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer"
-                            aria-label="Instagram">
+                        <a href="https://www.instagram.com/bloomora_fresh_flowers?stkn=MW4wY3p2a2JhaG9meQ=="
+                            target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <svg viewBox="0 0 24 24">
                                 <path
                                     d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm10.6 1.4a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" />
                             </svg>
                         </a>
-                        <a href="https://wa.me/94789846041" target="_blank" rel="noopener noreferrer" <svg
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M20.52 3.48A11.94 11.94 0 0 0 12 .5C5.65.5.5 5.65.5 12a11.9 11.9 0 0 0 1.7 6.2L.5 23.5l5.5-1.4A11.94 11.94 0 0 0 12 23.5c6.35 0 11.5-5.15 11.5-11.5 0-3.07-1.2-5.94-3.15-8.02zM12 21c-2.1 0-4.05-.7-5.65-1.9l-.4-.28-3.3.85.9-3.25-.28-.4A8.47 8.47 0 0 1 3.5 12c0-4.7 3.8-8.5 8.5-8.5 2.27 0 4.4.88 6 2.45a8.45 8.45 0 0 1 2.5 6.05c0 4.7-3.8 8.5-8.5 8.5z" />
-                            <path
-                                d="M17.5 14.3c-.3-.15-1.7-.85-2-.95-.3-.1-.5-.15-.7.15-.2.3-.8.95-1 1.15-.2.2-.4.2-.7.05-.3-.15-1.15-.43-2.2-1.35-.8-.7-1.3-1.55-1.45-1.85-.15-.3-.02-.45.12-.6.12-.1.3-.25.45-.35.15-.1.2-.15.3-.25.1-.1.05-.2 0-.35-.05-.15-.7-1.7-.95-2.35-.25-.6-.5-.55-.7-.55-.2 0-.45 0-.7 0s-.65.1-1 .45c-.35.35-1.35 1.3-1.35 3.15 0 1.85 1.4 3.6 1.6 3.85.2.25 2.75 4.2 6.7 5.9 3.95 1.7 3.95 1.15 4.65 1.1.7-.05 2.27-.9 2.6-1.75.35-.85.35-1.6.25-1.75-.1-.15-.35-.25-.7-.4z" />
+                        <a href="https://wa.me/94764796117" target="_blank" rel="noopener noreferrer"
+                            aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M20.52 3.48A11.94 11.94 0 0 0 12 .5C5.65.5.5 5.65.5 12a11.9 11.9 0 0 0 1.7 6.2L.5 23.5l5.5-1.4A11.94 11.94 0 0 0 12 23.5c6.35 0 11.5-5.15 11.5-11.5 0-3.07-1.2-5.94-3.15-8.02zM12 21c-2.1 0-4.05-.7-5.65-1.9l-.4-.28-3.3.85.9-3.25-.28-.4A8.47 8.47 0 0 1 3.5 12c0-4.7 3.8-8.5 8.5-8.5 2.27 0 4.4.88 6 2.45a8.45 8.45 0 0 1 2.5 6.05c0 4.7-3.8 8.5-8.5 8.5z" />
+                                <path
+                                    d="M17.5 14.3c-.3-.15-1.7-.85-2-.95-.3-.1-.5-.15-.7.15-.2.3-.8.95-1 1.15-.2.2-.4.2-.7.05-.3-.15-1.15-.43-2.2-1.35-.8-.7-1.3-1.55-1.45-1.85-.15-.3-.02-.45.12-.6.12-.1.3-.25.45-.35.15-.1.2-.15.3-.25.1-.1.05-.2 0-.35-.05-.15-.7-1.7-.95-2.35-.25-.6-.5-.55-.7-.55-.2 0-.45 0-.7 0s-.65.1-1 .45c-.35.35-1.35 1.3-1.35 3.15 0 1.85 1.4 3.6 1.6 3.85.2.25 2.75 4.2 6.7 5.9 3.95 1.7 3.95 1.15 4.65 1.1.7-.05 2.27-.9 2.6-1.75.35-.85.35-1.6.25-1.75-.1-.15-.35-.25-.7-.4z" />
                             </svg>
                         </a>
-                        <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer"
+                        <a href="https://www.tiktok.com/@bloomora277?_r=1&_t=ZS-99rbHcv1fvD" target="_blank"
+                            rel="noopener noreferrer" aria-label="TikTok">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M16.4 3.5c.4 1.7 1.7 3 3.4 3.5v2.7a6.7 6.7 0 0 1-3.4-1v7.2a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v2.7a3 3 0 1 0 2.1 2.9V3.5h5.6Z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/share/19XkAKuRJk/" target="_blank" rel="noopener noreferrer"
                             aria-label="Facebook">
                             <svg viewBox="0 0 24 24">
                                 <path
@@ -224,9 +236,141 @@
     </footer>
 
     <script>
+        const canvas = document.getElementById('flowerTornadoCanvas');
+        const ctx = canvas.getContext('2d');
+        const overlay = document.querySelector('.page-transition-overlay');
         const menuToggle = document.querySelector('.menu-toggle');
         const mainNav = document.querySelector('#main-nav');
-        const pageTransitionOverlay = document.querySelector('.page-transition-overlay');
+
+        const flowerPalette = ['#ff9eb3', '#ffd6a5', '#ffc1d9', '#f7d9ff', '#fae7c1', '#ffb2b2'];
+
+        let particles = [];
+        let transitionActive = false;
+        let transitionStart = 0;
+        let lastFrameTime = 0;
+        let currentTarget = null;
+
+        function resizeCanvas() {
+            const ratio = Math.min(window.devicePixelRatio || 1, 1.5);
+            canvas.width = window.innerWidth * ratio;
+            canvas.height = window.innerHeight * ratio;
+            canvas.style.width = window.innerWidth + 'px';
+            canvas.style.height = window.innerHeight + 'px';
+            ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+        }
+
+        function createFlowerParticle() {
+            const cx = window.innerWidth / 2;
+            const cy = window.innerHeight / 2;
+
+            return {
+                x: cx,
+                y: cy,
+                radius: 0,
+                angle: Math.random() * Math.PI * 2,
+                speed: 0.6 + Math.random() * 2.4,
+                drift: (Math.random() - 0.5) * 0.8,
+                spin: (Math.random() - 0.5) * 0.2,
+                size: 6 + Math.random() * 10,
+                color: flowerPalette[Math.floor(Math.random() * flowerPalette.length)],
+                alpha: 0.75 + Math.random() * 0.25,
+                swirl: 0.7 + Math.random() * 1.8,
+                lift: 1 + Math.random() * 2.2,
+                life: 0,
+                maxLife: 120 + Math.random() * 80
+            };
+        }
+
+        function startTornadoTransition(targetUrl) {
+            transitionActive = true;
+            transitionStart = performance.now();
+            lastFrameTime = transitionStart;
+            currentTarget = targetUrl;
+            const particleCount = window.innerWidth < 700 ? 420 : 520;
+            particles = Array.from({ length: particleCount }, createFlowerParticle);
+            overlay.classList.add('active');
+            document.body.classList.add('page-transitioning');
+            requestAnimationFrame(animateTransitionLoop);
+
+            setTimeout(() => {
+                window.location.href = targetUrl;
+            }, 1100);
+        }
+
+        function updateParticles() {
+            if (!transitionActive) return;
+
+            const now = performance.now();
+            const delta = Math.min((now - lastFrameTime) / 16.67, 2);
+            lastFrameTime = now;
+            const elapsed = (now - transitionStart) / 1000;
+            const progress = Math.min(elapsed / 1.1, 1);
+
+            particles.forEach((p) => {
+                // Radius: each particle starts close to the center and expands outward.
+                // A larger radius pulls the flower farther from the center, which helps the vortex grow.
+                p.radius += p.speed * (1.6 + p.swirl * 0.7) * 2.2 * delta;
+
+                // Angle controls the horizontal rotation around the center.
+                // Increasing the angle over time makes the petals spin around the vortex axis.
+                p.angle += (p.spin + 0.08 + p.swirl * 0.035) * delta;
+
+                // The tornado effect is created by combining circular motion and a lift force.
+                // X and Y are derived from polar coordinates:
+                // x = centerX + cos(angle) * radius
+                // y = centerY + sin(angle) * radius - (progress * lift * 120)
+                // The negative Y movement lifts particles upward into a swirling funnel.
+                const swirlX = Math.cos(p.angle) * p.radius;
+                const swirlY = Math.sin(p.angle) * p.radius;
+
+                p.x = window.innerWidth / 2 + swirlX + Math.sin(elapsed * 2 + p.angle) * 18;
+                p.y = window.innerHeight / 2 + swirlY - (progress * 320 * p.lift) + Math.cos(elapsed * 3 + p.angle) * 18;
+
+                // As the transition advances, particles fade and spread further outward.
+                p.life += delta;
+                p.alpha = Math.max(0, 1 - p.life / (p.maxLife * 1.6));
+            });
+
+            if (progress >= 1) {
+                particles.forEach((p) => {
+                    p.alpha *= 0.92;
+                });
+            }
+
+            if (elapsed > 1.6) {
+                transitionActive = false;
+                overlay.classList.remove('active');
+                document.body.classList.remove('page-transitioning');
+            }
+        }
+
+        function renderParticles() {
+            ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+            particles.forEach((p) => {
+                ctx.save();
+                ctx.translate(p.x, p.y);
+                ctx.rotate(p.angle * 3.4);
+                ctx.beginPath();
+                ctx.moveTo(0, 0);
+                ctx.bezierCurveTo(p.size, -p.size * 1.6, p.size * 0.8, -p.size * 2.5, 0, -p.size * 3.2);
+                ctx.bezierCurveTo(-p.size * 0.8, -p.size * 2.5, -p.size, -p.size * 1.6, 0, 0);
+                ctx.fillStyle = p.color;
+                ctx.globalAlpha = p.alpha;
+                ctx.fill();
+                ctx.restore();
+            });
+
+        }
+
+        function animateTransitionLoop() {
+            updateParticles();
+            renderParticles();
+
+            if (transitionActive) {
+                requestAnimationFrame(animateTransitionLoop);
+            }
+        }
 
         menuToggle?.addEventListener('click', () => {
             const isOpen = mainNav.classList.toggle('open');
@@ -242,13 +386,12 @@
                 if (targetUrl.origin !== window.location.origin) return;
 
                 event.preventDefault();
-                document.body.classList.add('page-transitioning');
-                pageTransitionOverlay?.classList.add('active');
-                setTimeout(() => {
-                    window.location.href = targetUrl.href;
-                }, 280);
+                startTornadoTransition(targetUrl.href);
             });
         });
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
 
         const tabButtons = document.querySelectorAll('.tab-btn');
         const tabPanels = document.querySelectorAll('.tab-panel');

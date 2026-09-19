@@ -13,7 +13,9 @@
 </head>
 
 <body>
-    <div class="page-transition-overlay" aria-hidden="true"></div>
+    <div class="page-transition-overlay" aria-hidden="true">
+        <canvas id="flowerTornadoCanvas"></canvas>
+    </div>
     <div class="image-modal" id="image-modal" aria-hidden="true">
         <div class="image-modal-content">
             <button class="image-modal-close" id="image-modal-close" type="button" aria-label="Close image">×</button>
@@ -57,78 +59,7 @@
     <main>
         <section class="section gallery">
             <h3>Our Floral Gallery</h3>
-            <div class="gallery-grid">
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/0338c194c42f39de78c7a7beb6b9622c.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/1c52903fdece0d09980237e73600e48e.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/2cde9ef89566612b0906a620be96857e.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/38e9e96acb21e3ff0afc7df17adc1e53.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/3b738f393bf75860609b9d67411d7817.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/43b56391a0cc5776724c441779e43336.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/60b353b524883b430f749165931eda97.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/65d56c07c473e1232ef0386eb2517c00.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/6c6c453027c643e0119e5f07af6d66de.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/77513421c3b28a9211cb9b8b5d7960d1.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/79c558426d39784dfef40ec60545b544.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/7a5e16955ea8153e85e0b08419f7d620.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/7af7aac0d3df5253ed11f413f076b834.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/94e3f8d8c6acb17fa6d5939debd9688e.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/a1aad24e635cec698ab7438c693c3ac6.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/a4a3e8c19319a459e06dff517b486163.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/b2eb9907fd25abd30d5fe401f39a7176.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/c48bacdd36867c2db587450d056defd7.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/c8f6119a60bdf2fceaeb68abbcbddbdd.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/cd11e1f094785a38b7abe69fe6709af5.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/cf750b0d39a896286c21990add571e35.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/d0d0b2dd58a43bacc403f4b123bd6e78.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/d4c7eed1d796d141caece6d5749eb004.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flower/d5887bac6e3c5a8a26d42070c0ee86da.jpg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flowers/WhatsApp Image 2026-07-11 at 5.09.10 PM.jpeg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flowers/WhatsApp Image 2026-07-11 at 5.10.25 PM.jpeg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flowers/WhatsApp Image 2026-07-11 at 5.11.16 PM.jpeg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flowers/WhatsApp Image 2026-07-11 at 5.16.57 PM.jpeg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flowers/WhatsApp Image 2026-07-11 at 5.21.25 PM.jpeg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flowers/WhatsApp Image 2026-07-11 at 5.25.20 PM (1).jpeg');">
-                </div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flowers/WhatsApp Image 2026-07-11 at 5.25.20 PM (2).jpeg');">
-                </div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flowers/WhatsApp Image 2026-07-11 at 5.25.20 PM.jpeg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flowers/WhatsApp Image 2026-07-11 at 5.32.59 PM.jpeg');"></div>
-                <div class="gallery-item"
-                    style="background-image: url('pics/flowers/WhatsApp Image 2026-07-11 at 5.33.28 PM.jpeg');"></div>
-            </div>
+            <div class="gallery-grid" id="gallery-grid"></div>
         </section>
     </main>
 
@@ -151,24 +82,38 @@
                 </div>
                 <div class="footer-col">
                     <h4>Contact</h4>
-                    <p>📞 0789846041</p>
-                    <p>✉️ maliknihara@gmail.com</p>
+                    <p><a href="https://wa.me/94764796117" target="_blank" rel="noopener noreferrer">📞 +94764796117</a>
+                    </p>
+                    <p><a href="mailto:bloomoratransport@gmail.com">✉️ bloomoratransport@gmail.com</a></p>
                     <p>📍 Colombo, Sri Lanka</p>
                 </div>
                 <div class="footer-col">
                     <h4>Follow Us</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer"
-                            aria-label="Instagram">
+                        <a href="https://www.instagram.com/bloomora_fresh_flowers?stkn=MW4wY3p2a2JhaG9meQ=="
+                            target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <svg viewBox="0 0 24 24">
                                 <path
                                     d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm10.6 1.4a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" />
                             </svg>
                         </a>
-                        <a href="https://wa.me/94789846041" target="_blank" rel="noopener noreferrer"
+                        <a href="https://wa.me/94764796117" target="_blank" rel="noopener noreferrer"
                             aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M20.52 3.48A11.94 11.94 0 0 0 12 .5C5.65.5.5 5.65.5 12a11.9 11.9 0 0 0 1.7 6.2L.5 23.5l5.5-1.4A11.94 11.94 0 0 0 12 23.5c6.35 0 11.5-5.15 11.5-11.5 0-3.07-1.2-5.94-3.15-8.02zM12 21c-2.1 0-4.05-.7-5.65-1.9l-.4-.28-3.3.85.9-3.25-.28-.4A8.47 8.47 0 0 1 3.5 12c0-4.7 3.8-8.5 8.5-8.5 2.27 0 4.4.88 6 2.45a8.45 8.45 0 0 1 2.5 6.05c0 4.7-3.8 8.5-8.5 8.5z" />
+                                <path
+                                    d="M17.5 14.3c-.3-.15-1.7-.85-2-.95-.3-.1-.5-.15-.7.15-.2.3-.8.95-1 1.15-.2.2-.4.2-.7.05-.3-.15-1.15-.43-2.2-1.35-.8-.7-1.3-1.55-1.45-1.85-.15-.3-.02-.45.12-.6.12-.1.3-.25.45-.35.15-.1.2-.15.3-.25.1-.1.05-.2 0-.35-.05-.15-.7-1.7-.95-2.35-.25-.6-.5-.55-.7-.55-.2 0-.45 0-.7 0s-.65.1-1 .45c-.35.35-1.35 1.3-1.35 3.15 0 1.85 1.4 3.6 1.6 3.85.2.25 2.75 4.2 6.7 5.9 3.95 1.7 3.95 1.15 4.65 1.1.7-.05 2.27-.9 2.6-1.75.35-.85.35-1.6.25-1.75-.1-.15-.35-.25-.7-.4z" />
+                            </svg>
                         </a>
-                        <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer"
+                        <a href="https://www.tiktok.com/@bloomora277?_r=1&_t=ZS-99rbHcv1fvD" target="_blank"
+                            rel="noopener noreferrer" aria-label="TikTok">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M16.4 3.5c.4 1.7 1.7 3 3.4 3.5v2.7a6.7 6.7 0 0 1-3.4-1v7.2a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v2.7a3 3 0 1 0 2.1 2.9V3.5h5.6Z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/share/19XkAKuRJk/" target="_blank" rel="noopener noreferrer"
                             aria-label="Facebook">
                             <svg viewBox="0 0 24 24">
                                 <path
@@ -185,9 +130,116 @@
     </footer>
 
     <script>
+        const canvas = document.getElementById('flowerTornadoCanvas');
+        const ctx = canvas ? canvas.getContext('2d') : null;
+        const overlay = document.querySelector('.page-transition-overlay');
         const menuToggle = document.querySelector('.menu-toggle');
         const mainNav = document.querySelector('#main-nav');
-        const pageTransitionOverlay = document.querySelector('.page-transition-overlay');
+        const galleryGrid = document.getElementById('gallery-grid');
+        const imageModal = document.getElementById('image-modal');
+        const imageModalImg = document.getElementById('image-modal-img');
+        const imageModalClose = document.getElementById('image-modal-close');
+
+        const flowerPalette = ['#ff9eb3', '#ffd6a5', '#ffc1d9', '#f7d9ff', '#fae7c1', '#ffb2b2'];
+        let particles = [];
+        let transitionActive = false;
+        let transitionStart = 0;
+        let lastFrameTime = 0;
+
+        function resizeCanvas() {
+            if (!canvas || !ctx) return;
+            const ratio = Math.min(window.devicePixelRatio || 1, 1.5);
+            canvas.width = Math.max(window.innerWidth, 1) * ratio;
+            canvas.height = Math.max(window.innerHeight, 1) * ratio;
+            canvas.style.width = window.innerWidth + 'px';
+            canvas.style.height = window.innerHeight + 'px';
+            ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+        }
+
+        function createFlowerParticle() {
+            return {
+                x: window.innerWidth / 2,
+                y: window.innerHeight / 2,
+                radius: 0,
+                angle: Math.random() * Math.PI * 2,
+                speed: 0.6 + Math.random() * 2.4,
+                spin: (Math.random() - 0.5) * 0.2,
+                size: 6 + Math.random() * 10,
+                color: flowerPalette[Math.floor(Math.random() * flowerPalette.length)],
+                alpha: 0.75 + Math.random() * 0.25,
+                swirl: 0.7 + Math.random() * 1.8,
+                lift: 1 + Math.random() * 2.2,
+                life: 0,
+                maxLife: 120 + Math.random() * 80
+            };
+        }
+
+        function startTornadoTransition(targetUrl) {
+            if (transitionActive) return;
+            transitionActive = true;
+            transitionStart = performance.now();
+            lastFrameTime = transitionStart;
+            const particleCount = window.innerWidth < 700 ? 420 : 520;
+            particles = Array.from({ length: particleCount }, createFlowerParticle);
+            overlay?.classList.add('active');
+            document.body.classList.add('page-transitioning');
+            requestAnimationFrame(animateTransitionLoop);
+            setTimeout(() => {
+                window.location.href = targetUrl;
+            }, 1100);
+        }
+
+        function animateTransitionLoop() {
+            if (!transitionActive || !ctx) return;
+            const now = performance.now();
+            const delta = Math.min((now - lastFrameTime) / 16.67, 2);
+            lastFrameTime = now;
+            const elapsed = (now - transitionStart) / 1000;
+            const progress = Math.min(elapsed / 1.1, 1);
+
+            particles.forEach((particle) => {
+                // Radius grows as each flower is pushed outward, creating the tornado's widening funnel.
+                particle.radius += particle.speed * (1.6 + particle.swirl * 0.7) * 2.2 * delta;
+                // Angle rotates the particle around the center, which forms the spiral motion of the tornado.
+                particle.angle += (particle.spin + 0.08 + particle.swirl * 0.035) * delta;
+                // The tornado effect combines circular motion with upward lift.
+                // X uses cos(angle) * radius and Y uses sin(angle) * radius minus lift to drag the petals upward.
+                const swirlX = Math.cos(particle.angle) * particle.radius;
+                const swirlY = Math.sin(particle.angle) * particle.radius;
+                const centerX = window.innerWidth / 2;
+                const centerY = window.innerHeight / 2;
+
+                particle.x = centerX + swirlX + Math.sin(elapsed * 2 + particle.angle) * 18;
+                particle.y = centerY + swirlY - (progress * 320 * particle.lift) + Math.cos(elapsed * 3 + particle.angle) * 18;
+                particle.life += delta;
+                particle.alpha = Math.max(0, 1 - particle.life / (particle.maxLife * 1.6));
+            });
+
+            ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+            particles.forEach((particle) => {
+                ctx.save();
+                ctx.translate(particle.x, particle.y);
+                ctx.rotate(particle.angle * 3.4);
+                ctx.beginPath();
+                ctx.moveTo(0, 0);
+                ctx.bezierCurveTo(particle.size, -particle.size * 1.6, particle.size * 0.8, -particle.size * 2.5, 0, -particle.size * 3.2);
+                ctx.bezierCurveTo(-particle.size * 0.8, -particle.size * 2.5, -particle.size, -particle.size * 1.6, 0, 0);
+                ctx.fillStyle = particle.color;
+                ctx.globalAlpha = particle.alpha;
+                ctx.fill();
+                ctx.restore();
+            });
+
+            if (elapsed > 1.6) {
+                transitionActive = false;
+                overlay?.classList.remove('active');
+                document.body.classList.remove('page-transitioning');
+                return;
+            }
+
+            requestAnimationFrame(animateTransitionLoop);
+        }
 
         menuToggle?.addEventListener('click', () => {
             const isOpen = mainNav.classList.toggle('open');
@@ -197,58 +249,89 @@
         document.querySelectorAll('.nav-links a, .footer-links a').forEach((link) => {
             const href = link.getAttribute('href');
             if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
-
             link.addEventListener('click', (event) => {
                 const targetUrl = new URL(href, window.location.href);
                 if (targetUrl.origin !== window.location.origin) return;
-
                 event.preventDefault();
-                document.body.classList.add('page-transitioning');
-                pageTransitionOverlay?.classList.add('active');
-                setTimeout(() => {
-                    window.location.href = targetUrl.href;
-                }, 280);
+                startTornadoTransition(targetUrl.href);
             });
         });
 
-        const imageModal = document.getElementById('image-modal');
-        const imageModalImg = document.getElementById('image-modal-img');
-        const imageModalClose = document.getElementById('image-modal-close');
-        const galleryItems = document.querySelectorAll('.gallery-item');
+        const galleryImages = [
+            'pics/flower/0338c194c42f39de78c7a7beb6b9622c.jpg',
+            'pics/flower/1c52903fdece0d09980237e73600e48e.jpg',
+            'pics/flower/2cde9ef89566612b0906a620be96857e.jpg',
+            'pics/flower/38e9e96acb21e3ff0afc7df17adc1e53.jpg',
+            'pics/flower/3b738f393bf75860609b9d67411d7817.jpg',
+            'pics/flower/43b56391a0cc5776724c441779e43336.jpg',
+            'pics/flower/60b353b524883b430f749165931eda97.jpg',
+            'pics/flower/65d56c07c473e1232ef0386eb2517c00.jpg',
+            'pics/flower/6c6c453027c643e0119e5f07af6d66de.jpg',
+            'pics/flower/77513421c3b28a9211cb9b8b5d7960d1.jpg',
+            'pics/flower/79c558426d39784dfef40ec60545b544.jpg',
+            'pics/flower/7a5e16955ea8153e85e0b08419f7d620.jpg',
+            'pics/flower/7af7aac0d3df5253ed11f413f076b834.jpg',
+            'pics/flower/94e3f8d8c6acb17fa6d5939debd9688e.jpg',
+            'pics/flower/a1aad24e635cec698ab7438c693c3ac6.jpg',
+            'pics/flower/a4a3e8c19319a459e06dff517b486163.jpg',
+            'pics/flower/b2eb9907fd25abd30d5fe401f39a7176.jpg',
+            'pics/flower/c48bacdd36867c2db587450d056defd7.jpg',
+            'pics/flower/c8f6119a60bdf2fceaeb68abbcbddbdd.jpg',
+            'pics/flower/cd11e1f094785a38b7abe69fe6709af5.jpg',
+            'pics/flower/cf750b0d39a896286c21990add571e35.jpg',
+            'pics/flower/d0d0b2dd58a43bacc403f4b123bd6e78.jpg',
+            'pics/flower/d47c39dd4ff393da3ec13bb36a6a6b26.jpg',
+            'pics/flower/d4c7eed1d796d141caece6d5749eb004.jpg',
+            'pics/flower/d5887bac6e3c5a8a26d42070c0ee86da.jpg',
+            'pics/flower/dd91db14bc5c71fcb1b29d90de088c55.jpg',
+            'pics/flower/e81588e63c458185cae31c64c13b2b29.jpg',
+            'pics/flower/e8a522526782fd7fcca10f4c26e2c219.jpg',
+            'pics/bokey/360_F_1056514248_hHayHCv45ojmPUkZdTikhyfI1xhp6NYY.webp',
+            'pics/bokey/mix-flower-composition-light-purple-roses-eustomas-side-view_141793-4492.webp',
+            'pics/bokey/summer-bouquet-beautiful-multi-colored-fresh-flower-arrangement-birthday-bouquet-made-of.webp',
+            'pics/bokey/Wedding-Flowers---10-Most-Popular-Flowers-for-a-Bridal-Bouquet-21-Peony.webp',
+            'pics/bokey/WhatsApp Image 2026-07-11 at 5.09.10 PM.jpeg',
+            'pics/bokey/WhatsApp Image 2026-07-11 at 5.10.25 PM.jpeg'
+        ];
+
+        const buildGallery = () => {
+            if (!galleryGrid) return;
+            galleryGrid.innerHTML = '';
+            galleryImages.forEach((imageUrl) => {
+                const item = document.createElement('div');
+                item.className = 'gallery-item';
+                item.style.backgroundImage = `url('${imageUrl}')`;
+                item.setAttribute('data-src', imageUrl);
+                item.setAttribute('role', 'button');
+                item.setAttribute('tabindex', '0');
+                item.setAttribute('aria-label', 'Open gallery image');
+                item.addEventListener('click', () => {
+                    const imageUrl = item.getAttribute('data-src');
+                    if (!imageUrl || !imageModal || !imageModalImg) return;
+                    imageModalImg.src = imageUrl;
+                    imageModalImg.alt = 'Bloomora floral display';
+                    imageModal.classList.add('open');
+                    imageModal.setAttribute('aria-hidden', 'false');
+                    document.body.classList.add('page-transitioning');
+                });
+                item.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        item.click();
+                    }
+                });
+                galleryGrid.appendChild(item);
+            });
+        };
 
         const closeImageModal = () => {
             imageModal?.classList.remove('open');
             imageModal?.setAttribute('aria-hidden', 'true');
-            imageModalImg.removeAttribute('src');
+            imageModalImg?.removeAttribute('src');
             document.body.classList.remove('page-transitioning');
         };
 
-        const openImageModal = (item) => {
-            const imageUrl = item.getAttribute('data-src') || item.style.backgroundImage.match(/url\((['"]?)(.*?)\1\)/)?.[2];
-            if (!imageUrl || !imageModal || !imageModalImg) return;
-
-            imageModalImg.src = imageUrl;
-            imageModalImg.alt = item.getAttribute('data-alt') || 'Bloomora floral display';
-            imageModal.classList.add('open');
-            imageModal.setAttribute('aria-hidden', 'false');
-            document.body.classList.add('page-transitioning');
-        };
-
-        galleryItems.forEach((item) => {
-            const imageUrl = item.getAttribute('data-src') || item.style.backgroundImage.match(/url\((['"]?)(.*?)\1\)/)?.[2];
-            if (imageUrl) {
-                item.setAttribute('data-src', imageUrl);
-            }
-            item.setAttribute('role', 'button');
-            item.setAttribute('tabindex', '0');
-            item.addEventListener('click', () => openImageModal(item));
-            item.addEventListener('keydown', (event) => {
-                if (event.key === 'Enter' || event.key === ' ') {
-                    event.preventDefault();
-                    openImageModal(item);
-                }
-            });
-        });
+        buildGallery();
 
         imageModal?.addEventListener('click', (event) => {
             if (event.target === imageModal) {
@@ -263,6 +346,9 @@
                 closeImageModal();
             }
         });
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
     </script>
 </body>
 

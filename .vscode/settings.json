@@ -1,0 +1,10 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "pics/Canva AI - Canva.html": true,
+        "pics/Canva AI - Canva_files": true,
+        "pics/WhatsApp.html": true,
+        "pics/WhatsApp_files": true,
+        "pics/flower/download.htm": true
+    }
+}
